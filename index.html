@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio - Alya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #1F1B24;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            color: #BB86FC;
+            font-size: 28px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .contenedor {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .seccion {
+            background-color: #1F1B24;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            color: #BB86FC;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #1F1B24;
+            padding: 20px;
+            text-align: center;
+            color: #BB86FC;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Alya</div>
+    </header>
+
+    <div class="contenedor">
+        <h2>Lo sentimos, el lanzamiento se ha atrasado</h2>
+        <p>Estamos trabajando arduamente para mejorar nuestra plataforma. Sin embargo, debido a ciertos imprevistos, el lanzamiento de las nuevas características se ha retrasado. Te agradecemos enormemente tu paciencia y comprensión mientras solucionamos estos problemas.</p>
+       
+        <section class="seccion">
+            <h2>¿Qué está pasando?</h2>
+            <p>Nuestro equipo ha encontrado desafíos técnicos que deben abordarse para garantizar la mejor calidad posible en el lanzamiento. Queremos que todo esté en su lugar antes de que se haga público.</p>
+        </section>
+
+        <section class="seccion">
+            <h2>¿Qué significa esto para ti?</h2>
+            <p>El retraso significa que tendrás acceso a más funciones y mejoras cuando se complete el lanzamiento. Estamos comprometidos a ofrecerte la mejor experiencia posible, por lo que este tiempo adicional es crucial.</p>
+        </section>
+
+        <section class="seccion">
+            <h2>¿Cuándo puedes esperar el lanzamiento?</h2>
+            <p>Estamos trabajando en un nuevo cronograma y te mantendremos informado sobre el avance. Tu apoyo es invaluable y te agradecemos por acompañarnos en este proceso.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Alya - Control de Aula Inteligente</p>
+    </footer>
+
+    <script>
+        // Obtener el nombre del profesor del almacenamiento local
+        const nombreProfesor = localStorage.getItem('nombreProfesor') || 'Profesor';
+        document.getElementById('nombre-profesor').textContent = nombreProfesor;
+    </script>
+</body>
+</html>
